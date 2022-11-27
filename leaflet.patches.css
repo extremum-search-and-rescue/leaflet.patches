@@ -19,9 +19,22 @@
     display: inline-block;
 }
 
+/* make disabled lables look disabled  */
+input.leaflet-control-layers-selector ~ span {
+    cursor: pointer;
+}
+
+input.leaflet-control-layers-selector:disabled ~ span {
+    opacity: 0.6;
+    cursor: auto;
+}
+
+/* prevent from accidental selection on layer names */
 .leaflet-control-layers label {
     user-select: none;
 }
+
+/* layers control end*/
 
 
 /*
