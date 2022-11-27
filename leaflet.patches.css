@@ -1,0 +1,78 @@
+﻿/*
+   leaflet patches
+*/
+
+@media print {
+    .leaflet-control {
+        visibility: hidden !important;
+        display: none !important;
+    }
+
+    .leaflet-control-scale {
+        visibility: visible !important;
+        display: initial !important;
+    }
+}
+
+.leaflet-control.stack-norizontal {
+    float: none;
+    display: inline-block;
+}
+
+.leaflet-control-layers label {
+    user-select: none;
+}
+
+
+/*
+   override margins for controls on touch
+*/
+@media (pointer: coarse) {
+    .leaflet-top .leaflet-control {
+        margin-top: 0px;
+    }
+
+    .leaflet-left .leaflet-control {
+        margin-left: 0px;
+    }
+
+    .leaflet-right .leaflet-control {
+        margin-right: 0px;
+    }
+
+    .leaflet-bar {
+        margin-bottom: 16px;
+    }
+}
+/*
+    patch for centered zoom
+*/
+
+.leaflet-center {
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.leaflet-middle {
+    top: 50%;
+    position: absolute;
+    z-index: 1000;
+    pointer-events: none;
+    transform: translate(0%, -50%);
+}
+
+.leaflet-center.leaflet-middle {
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+/* Safari 15+ patch*/
+.leaflet-control-container.leaflet-top,
+.leaflet-control-container.leaflet-middle,
+.leaflet-control-container.leaflet-bottom {
+    will-change: tranform;
+}
+
+/*
+  end of patch
+*/
