@@ -1,0 +1,79 @@
+/* dark theme support */
+
+@media (prefers-color-scheme: dark) {
+    .leaflet-container {
+        background: #222;
+    }
+    .leaflet-container a {
+        color: #0090FF;
+    }
+        .leaflet-container a:hover {
+            color: #7FC7FF;
+        }
+    input[type=radio].leaflet-control-layers-selector {
+        filter: invert();
+    }
+    input[type=checkbox].leaflet-control-layers-selector {
+        filter: invert()
+    }
+    .leaflet-control-layers {
+        background: #222;
+        color: #fff;
+    }
+    .leaflet-control-layers-separator {
+     
+        border-top: 1px solid #444;
+    }
+    .leaflet-control-button-pressed {
+        background-color: #0090FF !important;
+    }
+    
+    .leaflet-bar a {
+        
+        background: #222;
+        color: #fff;
+    }
+        .leaflet-bar a:hover {
+            background-color: #000;
+            color: #fff;
+        }
+        .leaflet-bar a:active {
+            background-color: #0090FF;
+            color: #fff;
+        }
+        .leaflet-bar a:focus{
+            background-color: #222;
+            color: #fff;
+        }
+        .leaflet-bar a:focus-visible {
+            background-color: #0090FF;
+            color: #fff;
+        }
+        .leaflet-bar a:not(:last-child) {
+            border-bottom: 1px solid #444;
+        }
+
+        .leaflet-bar a:hover:not(:last-child) {
+            border-bottom: 1px solid #444;
+        }
+
+    .leaflet-control-attribution {
+        background: rgba(0,0,0,0.7) !important;
+        text-shadow: 1px 1px rgba(0,0,0,0.7);
+    }
+    .leaflet-control-scale {
+        pointer-events: none;
+    }
+   
+    .gis-icon {
+        filter: invert(100%) !important;
+    }
+    .locate-location-arrow {
+        filter: invert(100%) !important;
+    }
+    .leaflet-bar a.leaflet-disabled {
+        background-color: #333;
+        pointer-events: none;
+    }
+
+}

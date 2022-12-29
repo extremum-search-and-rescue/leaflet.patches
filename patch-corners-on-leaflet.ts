@@ -5,7 +5,7 @@
     }
     L.Map.include({
         _initControlPos: function (this: L.Map) {
-            let corners = this._controlCorners = {},
+            let corners = this._controlCorners = {} as { [name: string]: HTMLDivElement },
                 l = 'leaflet-',
                 container = this._controlContainer =
                     L.DomUtil.create('div', l + 'control-container', this.getContainer());
