@@ -1,9 +1,6 @@
 /* dark theme support */
 
 @media (prefers-color-scheme: dark) {
-    .leaflet-container {
-        background: #222;
-    }
     .leaflet-container a {
         color: #0090FF;
     }
@@ -27,7 +24,7 @@
     .leaflet-control-button-pressed {
         background-color: #0090FF !important;
     }
-    
+
     .leaflet-bar a {
         
         background: #222;
@@ -60,9 +57,6 @@
     .leaflet-control-attribution {
         background: rgba(0,0,0,0.7) !important;
         text-shadow: 1px 1px rgba(0,0,0,0.7);
-    }
-    .leaflet-control-scale {
-        pointer-events: none;
     }
    
     .gis-icon {
