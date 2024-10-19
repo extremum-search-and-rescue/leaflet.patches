@@ -138,14 +138,19 @@ input.leaflet-control-layers-selector:disabled ~ span {
 
 .leaflet-control-scale-line {
     line-height: 1;
-    font-size: 10pt;
+    font-family: SF Mono, Consolas, Menlo, Monaco, Roboto Mono, PT Mono, DejaVu Sans Mono, Courier New;
+    font-size: 9pt;
     background: unset;
     pointer-events: none;
-    color: rgba(0,0,0,1);
-    border-bottom: 1px solid rgba(255,255,255,0.9);
-    border-right: 1px solid rgba(255,255,255,0.9);
-    border-left: 1px solid rgba(255,255,255,0.9);
-    box-shadow: 1px 1px 0px black, -1px 1px 0px black;
-    text-shadow: 1px 1px 1px white, -1px 1px 1px white, 1px -1px 1px white, -1px -1px 1px white;
     border-top: 0px;
+}
+
+.leaflet-map-pane canvas {
+    z-index: 450;
+}
+.leaflet-container:has(>* canvas.leaflet-interactive) {
+    cursor: pointer !important;
+}
+.leaflet-interactive {
+    cursor: pointer !important;
 }
