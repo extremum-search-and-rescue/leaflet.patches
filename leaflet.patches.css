@@ -154,3 +154,10 @@ input.leaflet-control-layers-selector:disabled ~ span {
 .leaflet-interactive {
     cursor: pointer !important;
 }
+
+.leaflet-control-layers-toggle {
+    background-image:url(/images/layers.png) !important;
+}
+.leaflet-retina .leaflet-control-layers-toggle {
+    background-image:url(/images/layers-2x.png) !important;
+}
